@@ -23,7 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name="home"),
     #going to store
-    path("store/",include("app_store.urls"))
+    path("store/",include("app_store.urls")),
+    #going to cart
+    path("cart/",include("app_cart.urls")),
 ]
 
 urlpatterns+=staticfiles_urlpatterns()
